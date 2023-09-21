@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #f4e0e0;
+}
+
+.fondo {
+  margin-top: 3%;
+  height: 550px;
+  width: 100%;
+  max-width: 1180px;
+  background: #ffffff;
+  border-radius: 40px;
+}
+.lg {
+  background: red;
+}
+.fondo2 {
+  background: #cedcff;
+  height: 550px;
+  mix-blend-mode: multiply;
+  border-radius: 40px;
+}
+.fondo3 {
+  background: #ffffff;
+  height: 550px;
+  mix-blend-mode: multiply;
+  border-radius: 40px;
+}
+.logo {
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  display: flex;
+  position: relative;
+  top: 161px;
+
+  left: 40px;
+  mix-blend-mode: multiply;
+  flex-shrink: 0;
+}
+.logo-derecho {
+  mix-blend-mode: multiply;
+  max-width: 250px;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  margin: 0;
+}
+.select {
+  position: absolute;
+  top: 10px;
+}
+.title {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  margin-bottom: 3%;
+}
+.campos-login {
+  font-weight: 500;
+  height: 33px;
+  border-radius: 1.875rem;
+  background: #d9d9d9;
+  outline: none;
+  padding: 20px;
+  font-size: 16px;
+  border: 0;
+  width: 330px;
+}
+.boton {
+  border-radius: 40px;
+  width: 200px;
+  font-weight: 400;
+  font-size: 20px;
+}
