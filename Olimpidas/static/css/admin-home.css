@@ -1,0 +1,42 @@
+.bg-nav {
+  background-color: #d7bde2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+  padding: 20px;
+}
+
+.bg-nav h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.bg-nav .nav-link {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Estilos para el icono del menú */
+.icono-menu {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* Estilos para el contenido principal */
+.bg-light {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.sj {
+  background: red;
+}
+.sl {
+  background: yellow;
+}
