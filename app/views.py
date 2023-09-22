@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Paciente
 
 # Create your views here.
 
@@ -13,7 +14,29 @@ def Admin(request):
 def Paciente(request):
     return render(request, 'paciente-admin.html')
 
+
 def Agregar_paciente(request):
+    if request.method == 'POST':
+      
+        dni=request.POST.get('dni-paciente')
+        nombre=request.POST.get('nombre-paciente')
+        apellido=request.POST.get('apellido-paciente')
+        fecha_nacimiento=request.POST.get('nacimiento-paciente')
+        sexo=request.POST.get('sexo-paciente')
+        sangre=request.POST.get('grupo-sangre')
+        patologia=request.POST.get('patoligia-paciente')
+        alergia=request.POST.get('alergia')
+        telefono=request.POST.get('telefono-paciente')
+        dirrecion=request.POST.get('direccion-paciente')
+        enfermero=request.POST.get('enfermero-acargo')
+
+        
+
+        
+
+        mi_objeto=Paciente(nombre=nombre,apellido=apellido,fecha_nacimiento=fecha_nacimiento,sexo=sexo,sangre=tipo_sangre,patologia=patologia,alergia=alergia,telefono=telefono,dirrecion=dirrecion,enfermero=dni_enfermero)
+
+        mi_objeto.save()
     return render(request, 'agregar-paciente.html')
 
 def Enfermero(request):

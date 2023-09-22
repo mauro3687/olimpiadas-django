@@ -26,7 +26,7 @@ class Paciente(models.Model):
     apellido = models.CharField(max_length=255)
     fecha_nacimiento = models.DateField()
     sexo = models.CharField(max_length=10, choices=(('M', 'Masculino'), ('F', 'Femenino')))
-    tipo_sangre = models.CharField(max_length=5)
+    tipo_sangre = models.CharField(max_length=5 )
     patologia = models.CharField(max_length=255, blank=True)  
     alergias = models.CharField(max_length=255, blank=True)  
     telefono = models.CharField(max_length=20, blank=True)  
