@@ -1,1 +1,61 @@
-{% extends 'admin.html' %}{% block content %}hola {% endblock %}
+{% extends 'admin.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/agregar-paciente.css' %}" />
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+    <h1 class="title">Agregar Area</h1>
+    <div class="col-lg-12 d-flex justify-content-center">
+      <form action="">
+        <input
+          type="text"
+          placeholder="NOMBRE DE LA AREA"
+          class="input-group-text mt-1"
+        />
+        <input
+          type="text"
+          placeholder="DESCRIPCION"
+          class="input-group-text mt-1"
+        />
+        <input
+          type="text"
+          placeholder="NUMERO DE LA ZONA"
+          class="input-group-text mt-1"
+        />
+        <div class="col-lg-12">
+          <select name="" id="" class="input-group-text mt-1">
+            <option value="">ESTADO DE LA AREA</option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="col-lg-12">
+          <select name="" id="" class="input-group-text mt-1">
+            <option value="">FORMA DE LA LLAMADA</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="col-lg-12">
+          <select name="" id="" class="input-group-text mt-1">
+            <option value="">PACIENTE DE LA AREA</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+        </div>
+        <div class="col-lg-12">
+          <select name="" id="" class="input-group-text mt-1">
+            <option value="">ENFERMERO ENCARGADO</option>
+            <option value=""></option>
+          </select>
+        </div>
+
+        <div class="col-lg-12">
+          <button class="btn btn-primary w-100 mt-1" type="submit">
+            Agregar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  {% endblock %}
+</div>

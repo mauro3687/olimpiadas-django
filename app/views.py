@@ -20,7 +20,7 @@ def Enfermero(request):
     return render(request, 'enfermero.html')
 
 def Agregar_enfermero(request):
-    return render(request, 'agregar-enfermero')
+    return render(request, 'agregar-enfermero.html')
 
 def Area(request):
     return render(request, 'area.html')

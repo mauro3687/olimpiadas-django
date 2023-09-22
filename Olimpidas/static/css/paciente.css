@@ -1,0 +1,22 @@
+.logo {
+  width: 200px;
+  height: 180px;
+  mix-blend-mode: multiply;
+}
+.img {
+  width: 70px;
+  height: 70px;
+}
+.icons {
+  height: 10px;
+  width: 10px;
+}
+.logos {
+  width: 10px;
+  height: 10px;
+}
+.botom {
+  margin-right: 40px;
+  width: 220px;
+  font-weight: 600;
+}

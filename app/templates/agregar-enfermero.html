@@ -1,0 +1,44 @@
+{% extends 'admin.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/agregar-paciente.css' %}" />
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+    <h1 class="title">Agregar enfermero</h1>
+    <div class="col-lg-12 d-flex justify-content-center">
+      <form action="">
+        <input type="text" placeholder="DNI" class="input-group-text mt-1" />
+        <input type="text" placeholder="NOMBRE" class="input-group-text mt-1" />
+        <input
+          type="text"
+          placeholder="APELLIDO"
+          class="input-group-text mt-1"
+        />
+        <input
+          type="date"
+          placeholder="fecha nacimiento"
+          class="input-group-text mt-1"
+        />
+        <select name="" id="" class="input-group-text mt-1">
+          <option value="">Masculino</option>
+          <option value="">femenino</option>
+        </select>
+
+        <input
+          type="text"
+          placeholder="TELEFONO"
+          class="input-group-text mt-1"
+        />
+
+        <select name="" id="" class="input-group-text mt-1">
+          <option value="">Activo</option>
+          <option value="">Inactivo</option>
+        </select>
+        <div class="col-lg-12">
+          <button class="btn btn-primary w-100 mt-1" type="submit">
+            Agregar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  {% endblock %}
+</div>

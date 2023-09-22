@@ -1,1 +1,58 @@
-{% extends 'admin.html' %} {% block content %} hola {% endblock %}
+{% extends 'admin.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/paciente.css' %}" />
+<div class="col-lg-12 d-flex align-items-start justify-content-center">
+  <img src="{% static 'imagenes/Gray.png' %}" alt="" class="logo" />
+</div>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <img
+      src="{% static 'imagenes/paciente.png' %}"
+      alt=""
+      width="40"
+      height="40"
+      class="ms-5 img"
+    />
+
+    <div class="navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <h3>12</h3>
+        </li>
+        <li class="nav-item"></li>
+        <a href="/admin-paciente-agregar"
+          ><button class="btn btn-primary ms-5 botom">Agregar</button></a
+        >
+      </ul>
+      <form class="d-flex formulario me-5" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-5">
+      <h3></h3>
+      <h5></h5>
+      <h5></h5>
+      <h5></h5>
+      <h5></h5>
+    </div>
+    <div class="col-lg-5">
+      <h3></h3>
+      <h5></h5>
+      <h5></h5>
+      <h5></h5>
+      <h5></h5>
+      <h5></h5>
+    </div>
+  </div>
+</div>
+{% endblock %}

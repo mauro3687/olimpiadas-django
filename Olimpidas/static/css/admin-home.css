@@ -40,3 +40,10 @@
 .sl {
   background: yellow;
 }
+.fondo {
+  background: #f4e0e0;
+}
+.img {
+  mix-blend-mode: multiply;
+  color: #d7bde2;
+}
