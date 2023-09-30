@@ -17,6 +17,9 @@ body {
 .lg {
   background: red;
 }
+.listo {
+  text-decoration: none;
+}
 .fondo2 {
   background: #cedcff;
   height: 550px;
